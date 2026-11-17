@@ -1,47 +1,36 @@
-import java.util.Scanner;
-  public class IT26101506Lab8Q1B{
-  public static void main( String [] args){
-   Scanner value=new Scanner(System.in);
-   int myArray[] = new int[5];
-   int evenArray[] = new int [5];
-   int c=1;
-   int p =0;
+public class IT26101506Lab8Q2{
+public static void main ( String [] args){
+  int A[]={10,20,30,40,50};
+  int B[]={34,67,12,89,12};
+  int C[]=new int[5];
+  int sum=0;
   
-   
-    System.out.println("Enter 5 Numbers");
-   
-   for (int i=0 ; i<myArray.length ; i++ ){
-    System.out.print("Enter Number"+" "+c+": ");
-	c=c+1;
-	myArray[i]=value.nextInt();
-	}
-	
+  for(int i=0 ; i<A.length ; i++){
+    sum = A[i]+B[i];
+    C[i] = sum;
+  }
     System.out.println(" ");
-	System.out.println("myArray Contents:");
+    System.out.println("A Array Contents:");
   
-   for (int i=0 ; i<myArray.length ; i++ ){
-    System.out.print(myArray[i]+" ");
+   for (int i=0 ; i<A.length ; i++ ){
+    System.out.print(A[i]+" ");
 	
    }
- 
+     System.out.println("\n"); 
+     System.out.println("B Array Contents:");
+  
+   for (int i=0 ; i<B.length ; i++ ){
+    System.out.print(B[i]+" ");
+	
+   }
+   
     System.out.println("\n");
-	System.out.println("evenArray Contents:");
-   
-   for ( int i=0 ; i<myArray.length ;i++ ){
-   
-      if (myArray[i]%2==0){
-        int num = myArray[i];
-        evenArray[p] = num;
-		p++;
-        }
-     
-    }	  
-   for (int i=0 ; i<evenArray.length ; i++ ){
-    System.out.print(evenArray[i]+" ");
-	}
-   
-  }
+    System.out.println("C Array Contents (A + B):");
+  
+   for (int i=0 ; i<C.length ; i++ ){
+    System.out.print(C[i]+" ");
 	
+   }
+ }
 }
-	
-    
+   
